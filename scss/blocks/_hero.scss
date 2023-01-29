@@ -7,9 +7,15 @@
     width: 128px;
     height: 240px;
 }
+.hero__headding-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .hero__title {
     width: 327px;
     @include main-title;
+    margin: 24px 0;
 }
 .form {
     display: flex;
@@ -60,4 +66,84 @@
     line-height: 18px;
     color: #6c8294;
     text-decoration: none;
+}
+@media only screen and (min-width: 640px){
+    .hero__img {
+        width: 159px;
+        height: 300px;
+        margin-top: 16px;
+    }
+    .hero__title {
+        width: 573px;
+        @include main-title;
+        font-size: 48px;
+        line-height: 56px;
+        margin: 48px 0 24px 0;
+    }
+    .form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        margin-bottom: 16px;
+    }
+    .email-input {
+        width: 445px;
+        margin-bottom: 0;
+    }
+    .form__button {
+        width: 173px;
+        height: 48px;
+        position: absolute;
+        right: 0;
+        margin-bottom: 0;
+    }
+}
+@media only screen and (min-width: 820px){
+    .hero__inner {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: start;
+        align-items: center;
+    }
+    .hero__img {
+        width: 263px;
+        height: 500px;
+        margin-top: 0;
+        margin-left: 290px;
+    }
+    .hero__headding-box {
+        align-items: flex-start;
+    }
+    .hero__title {
+        width: 546px;
+        @include main-title;
+        font-size: 72px;
+        line-height: 72px;
+        margin: 0;
+        text-align: start;
+        margin-bottom: 21px;
+    }
+    .form {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        margin-bottom: 16px;
+    }
+    .email-input {
+        width: 445px;
+        margin-bottom: 0;
+    }
+    .form__button {
+        width: 173px;
+        height: 48px;
+        position: absolute;
+        right: 0;
+        margin-bottom: 0;
+    }
+    .hero__text {
+        margin-left: 27px;
+    }
 }
