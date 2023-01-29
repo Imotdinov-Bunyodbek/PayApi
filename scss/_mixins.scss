@@ -1,0 +1,128 @@
+// MIXINS
+
+@mixin list-rest {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+@mixin box ($width, $height, $color){
+    width: $width;
+    height: $height;
+    background-color: $color;
+}
+
+@mixin display-justfiy-alain ($content: flex, $centr: space-between, $middle: center) {
+    display: $content;
+    justify-content: $centr;
+    align-items: $middle;
+}
+
+@mixin psevdo-elements ($position, $tepa, $chap) {
+    position: $position;
+    top: $tepa;
+    left: $chap;
+    content: "";
+}
+
+@mixin media-max ($max-width:1440px) {
+    @media only screen and (max-width: $max-width) { 
+        @content;
+    }
+}
+@mixin media-min ($min-width:600px) {
+    @media only screen and (min-width: $min-width) { 
+        @content;
+    }
+}
+
+@mixin nav-link {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--san-juan-blue);
+    opacity: 0.7;
+}
+
+@mixin main-link {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.115385px;
+    color: #FBFCFE;
+    background-color: #BA4270;
+    box-shadow: 10px 10px 25px -10px #36536b40;
+    border-radius: 24px;
+    
+    &:hover {
+        opacity: 0.7;
+    }
+    
+    &:active {
+        opacity: 0.5;
+    }
+}
+
+@mixin second-link {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.115385px;
+    color: #FBFCFE;
+    border: 1px solid #FBFCFE;
+    border-radius: 24px;
+    
+    &:hover {
+        color: #1B262F;
+        background-color: #FFFFFF;
+        border: 1px solid #FBFCFE;
+    }
+    
+    &:active {
+        opacity: 0.5;
+    }
+}
+
+@mixin mobile-box {
+    width: 100%;
+    max-width: 327px;
+}
+
+@mixin title-style {
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+}
+
+@mixin input-text {
+    font-style: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: var(--san-juan-blue);
+}
+
+@mixin main-title {
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.246154px;
+    color: var(--san-juan-blue);
+}
+
+@mixin main-text {
+    font-family: 'Public Sans';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+    color: #FBFCFE;
+}
+
+@mixin sub-title {
+    @include title-style;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.184615px;
+    color: #36536B;
+}
