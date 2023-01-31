@@ -64,18 +64,19 @@
 }
 
 @mixin second-link {
+    font-family: 'Public Sans';
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
     letter-spacing: -0.115385px;
-    color: #FBFCFE;
-    border: 1px solid #FBFCFE;
+    color: #fbfcfe;
+    border: 1px solid #fbfcfe;
     border-radius: 24px;
     
     &:hover {
-        color: #1B262F;
-        background-color: #FFFFFF;
-        border: 1px solid #FBFCFE;
+        color: #1b262f;
+        background-color: #ffffff;
+        border: 1px solid #fbfcfe;
     }
     
     &:active {
