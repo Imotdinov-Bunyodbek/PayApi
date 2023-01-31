@@ -1730,4 +1730,328 @@ body {
   .simple-section-form {
     margin-bottom: 0;
   }
+}
+.pricing__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 16px;
+}
+
+.inner__title {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -0.246154px;
+  color: var(--san-juan-blue);
+  margin: 0;
+}
+
+.inner_list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inner_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricing-title {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.184615px;
+  color: #ba4270;
+  margin: 0;
+  margin-top: 48px;
+}
+
+.pricing-text {
+  display: none;
+}
+
+.plan-price {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: -0.430769px;
+  color: #36536B;
+  margin: 0;
+  margin-top: 81px;
+}
+
+.plan-convenience {
+  width: 327px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 24px 0;
+  border-top: 1px solid var(--san-juan-blue);
+  border-bottom: 1px solid var(--san-juan-blue);
+  margin-top: 24px;
+}
+
+.convenience-box {
+  width: 134px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.convenience__check-img {
+  position: absolute;
+  left: 0;
+}
+
+.noconvenience {
+  opacity: 0.7;
+}
+
+.convenience-text {
+  font-family: "Public Sans";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  color: #FBFCFE;
+  font-size: 16px;
+  color: var(--san-juan-blue);
+  margin-left: 36px;
+}
+
+.plan-link {
+  width: 168px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  color: var(--san-juan-blue);
+  border: 1px solid var(--san-juan-blue);
+  border-radius: 24px;
+  text-decoration: none;
+  margin-top: 24px;
+}
+
+@media only screen and (min-width: 640px) {
+  .pricing__inner {
+    margin-top: 43px;
+  }
+  .inner__title {
+    font-family: "DM Serif Display";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.246154px;
+    color: var(--san-juan-blue);
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .inner_list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .inner_item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .pricing-title {
+    font-size: 24px;
+    line-height: 40px;
+    margin-top: 69px;
+  }
+  .pricing-text {
+    width: 223px;
+    display: block;
+    font-family: "Public Sans";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+    color: #FBFCFE;
+    color: var(--san-juan-blue);
+    opacity: 0.9;
+  }
+  .plan-price {
+    font-size: 48px;
+    line-height: 72px;
+    margin-top: 19px;
+  }
+  .plan-convenience {
+    width: 223px;
+    margin-top: 21px;
+  }
+  .convenience-box {
+    width: 134px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .convenience__check-img {
+    position: absolute;
+    left: 0;
+  }
+  .noconvenience {
+    opacity: 0.5;
+  }
+  .convenience-text {
+    font-family: "Public Sans";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+    color: #FBFCFE;
+    font-size: 16px;
+    color: var(--san-juan-blue);
+    margin-left: 36px;
+  }
+}
+@media only screen and (min-width: 820px) {
+  .pricing__inner {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 50px;
+  }
+  .inner__title {
+    font-family: "DM Serif Display";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.246154px;
+    color: var(--san-juan-blue);
+    font-size: 56px;
+  }
+  .inner_item {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .inner_item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .pricing-title {
+    font-size: 32px;
+    margin-top: 72px;
+  }
+  .pricing-text {
+    width: 350px;
+    text-align: start;
+    opacity: 0.9;
+  }
+  .plan-price {
+    font-size: 56px;
+    margin-top: 8px;
+  }
+  .plan-convenience {
+    width: 350px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 24px;
+  }
+  .convenience-box {
+    width: 134px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .convenience__check-img {
+    position: absolute;
+    left: 0;
+  }
+  .noconvenience {
+    opacity: 0.5;
+  }
+  .convenience-text {
+    font-family: "Public Sans";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+    color: #FBFCFE;
+    font-size: 16px;
+    color: var(--san-juan-blue);
+    margin-left: 36px;
+  }
 }/*# sourceMappingURL=syle.css.map */

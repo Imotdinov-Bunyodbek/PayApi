@@ -1,0 +1,208 @@
+.pricing__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+}
+.inner__title {
+    @include main-title;
+    margin: 0;
+}
+.inner_list {
+    @include list-rest;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inner_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pricing-title {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.184615px;
+    color: #ba4270;
+    margin: 0;
+    margin-top: 48px;
+}
+.pricing-text {
+    display: none;
+}
+.plan-price {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: -0.430769px;
+    color: #36536B;
+    margin: 0;
+    margin-top: 81px;
+}
+.plan-convenience {
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0;
+    border-top: 1px solid var(--san-juan-blue);
+    border-bottom: 1px solid var(--san-juan-blue);
+    margin-top: 24px;
+}
+.convenience-box {
+    width: 134px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.convenience__check-img {
+    position: absolute;
+    left: 0;
+}
+.noconvenience {
+    opacity: 0.7;
+}
+.convenience-text {
+    @include main-text;
+    font-size: 16px;
+    color: var(--san-juan-blue);
+    margin-left: 36px;
+}
+.plan-link {
+    width: 168px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.115385px;
+    color: var(--san-juan-blue);
+    border: 1px solid var(--san-juan-blue);
+    border-radius: 24px;
+    text-decoration: none;
+    margin-top: 24px;
+}
+@media only screen and (min-width: 640px){
+    .pricing__inner {
+        margin-top: 43px;
+    }
+    .inner__title {
+        @include main-title;
+        font-size: 48px;
+        line-height: 56px;
+    }
+    .inner_list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .inner_item:not(:last-child) {
+        margin-right: 10px;
+    }
+    .pricing-title {
+        font-size: 24px;
+        line-height: 40px;
+        margin-top: 69px;
+    }
+    .pricing-text {
+        width: 223px;
+        display: block;
+        @include main-text;
+        color: var(--san-juan-blue);
+        opacity: 0.9;
+    }
+    .plan-price {
+        font-size: 48px;
+        line-height: 72px;
+        margin-top: 19px;
+    }
+    .plan-convenience {
+        width: 223px;
+        margin-top: 21px;
+    }
+    .convenience-box {
+        width: 134px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+    }
+    .convenience__check-img {
+        position: absolute;
+        left: 0;
+    }
+    .noconvenience {
+        opacity: 0.5;
+    }
+    .convenience-text {
+        @include main-text;
+        font-size: 16px;
+        color: var(--san-juan-blue);
+        margin-left: 36px;
+    }
+}
+@media only screen and (min-width: 820px){
+    .pricing__inner {
+        align-items: flex-start;
+        margin-top: 50px;
+    }
+    .inner__title {
+        @include main-title;
+        font-size: 56px;
+    }
+    .inner_item {
+        align-items: flex-start;
+    }
+    .inner_item:not(:last-child) {
+        margin-right: 30px;
+    }
+    .pricing-title {
+        font-size: 32px;
+        margin-top: 72px;
+    }
+    .pricing-text {
+        width: 350px;
+        text-align: start;
+        opacity: 0.9;
+    }
+    .plan-price {
+        font-size: 56px;
+        margin-top: 8px;
+    }
+    .plan-convenience {
+        width: 350px;
+        align-items: flex-start;
+        margin-top: 24px;
+    }
+    .convenience-box {
+        width: 134px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+    }
+    .convenience__check-img {
+        position: absolute;
+        left: 0;
+    }
+    .noconvenience {
+        opacity: 0.5;
+    }
+    .convenience-text {
+        @include main-text;
+        font-size: 16px;
+        color: var(--san-juan-blue);
+        margin-left: 36px;
+    }
+}
