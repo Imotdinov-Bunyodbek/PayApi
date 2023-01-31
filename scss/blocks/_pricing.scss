@@ -95,6 +95,9 @@
     margin-top: 24px;
 }
 @media only screen and (min-width: 640px){
+    .not-index-body {
+        background-position: calc(50% + 575px) calc(50% - 640px);
+    }
     .pricing__inner {
         margin-top: 43px;
     }
@@ -153,6 +156,9 @@
     }
 }
 @media only screen and (min-width: 820px){
+    .not-index-body {
+        background-position: calc(50% + 550px) calc(50% - 540px);
+    }
     .pricing__inner {
         align-items: flex-start;
         margin-top: 50px;

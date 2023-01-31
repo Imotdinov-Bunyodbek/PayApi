@@ -1,0 +1,211 @@
+.about-section {
+    margin-top: 16px;
+}
+.section__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section1__title {
+    width: 327px;
+    @include main-title;
+    margin: 0;
+    margin-bottom: 32px;
+}
+.inner__headding-box {
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.headding-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.headding-box__title {
+    @include sub-title;
+    margin: 0;
+    margin-top: 48px;
+    margin-bottom: 16px;
+}
+.headding-box__text {
+    width: 327px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+    color: #6c8294;
+    margin: 0;
+}
+.about-img-section {
+    height: 300px;
+    background-image: url("../images/humans_m.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 76px;
+    margin-bottom: 32px;
+}
+.info-wrapper {
+    width: 327px;
+    height: 398px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid var(--san-juan-blue);
+    border-bottom: 1px solid var(--san-juan-blue);
+    padding: 16px 0;
+}
+.info-box:not(:last-child) {
+    margin-bottom: 32px;
+}
+.info-text {
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--san-juan-blue);
+    margin: 0;
+}
+.info-number-text {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: -0.430769px;
+    color: #ba4270;
+    margin: 0;
+}
+.inner_bottom-box {
+    margin-top: 48px;
+}
+@media only screen and (min-width: 640px){
+    .about-section {
+        margin-top: 43px;
+    }
+    .section1__title {
+        width: 572px;
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 54px;
+    }
+    .inner__headding-box {
+        width: 689px;
+    }
+    .headding-box {
+        width: 689px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .headding-box:first-child {
+        margin-bottom: 64px;
+    }
+    .headding-box__title {
+        font-size: 32px;
+        line-height: 40px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .headding-box__text {
+        width: 456px;
+        text-align: start;
+    }
+    .about-img-section {
+        height: 267px;
+        background-image: url("../images/humans_t.png");
+        margin-top: 92px;
+        margin-bottom: 64px;
+    }
+    .info-wrapper {
+        width: 659px;
+        height: 134px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-top: none;
+        border-bottom: none;
+        padding: 0;
+        margin-bottom: 64px;
+    }
+    .info-box {
+        width: 223px;
+        height: 134px;
+        display: flex;
+        justify-content: flex-start;
+        border-top: 1px solid var(--san-juan-blue);
+        border-bottom: 1px solid var(--san-juan-blue);
+        padding-top: 44px;
+    }
+    .info-box:not(:last-child) {
+        margin-bottom: 0px;
+        margin-right: 10px;
+    }
+    .info-text {
+        display: none;
+    }
+    .inner_bottom-box {
+        margin-top: 40px;
+    }
+}
+@media only screen and (min-width: 820px){
+    .site-main-about {
+        background-image: url("../images/around-bg.svg");
+        background-repeat: no-repeat;
+        background-size: 780px 780px;
+        background-position: calc(50% - 900px) calc(50% + 0px);
+    }
+    .about-section {
+        margin-top: 50px;
+    }
+    .section1__title {
+        width: 668px;
+        font-size: 56px;
+        text-align: start;
+        margin-bottom: 51px;
+        margin-left: -250px;
+    }
+    .inner__headding-box {
+        width: 920px;
+    }
+    .headding-box {
+        width: 920px;
+    }
+    .headding-box:first-child {
+        margin-bottom: 56px;
+    }
+    .headding-box__text {
+        width: 635px;
+    }
+    .about-img-section {
+        height: 500px;
+        background-image: url("../images/humans_d.png");
+        margin-top: 100px;
+        margin-bottom: 72px;
+    }
+    .info-wrapper {
+        width: 1110px;
+        margin-bottom: 72px;
+    }
+    .info-box {
+        width: 350px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 17px;
+    }
+    .info-box:not(:last-child) {
+        margin-right: 30px;
+    }
+    .info-text {
+        display: block;
+    }
+    .inner_bottom-box {
+        margin-top: 100px;
+    }
+}
