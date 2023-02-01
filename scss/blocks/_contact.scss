@@ -1,0 +1,215 @@
+.contact {
+    margin-top: 16px;
+}
+.contact__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact__inner__title {
+    width: 327px;
+    @include main-title;
+    margin: 0;
+}
+.form-and-brand-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.input {
+    width: 327px;
+    height: 42px;
+    display: flex;
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: var(--san-juan-blue);
+    mix-blend-mode: normal;
+    margin: 0;
+    padding-left: 20px;
+    margin-bottom: 24px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(54, 83, 107, .5);
+    &::placeholder {
+        opacity: 0.5;
+    }
+}
+.input:focus {
+    outline: none;
+}
+.message {
+    height: 89px;
+}
+.checkboc-symbol {
+    width: 327px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.checkbox {
+    width: 24px;
+    height: 24px;
+    color: var(--san-juan-blue);
+    margin-right: 26px;
+}
+.checkbox-text {
+    width: 277px;
+    @include title-style;
+    @include input-text;
+}
+.contact-button {
+    width: 152px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    border: none;
+    border: 1px solid var(--san-juan-blue);
+    background-color: transparent;
+    &:hover {
+        color: #fff;
+        background-color: var(--san-juan-blue);
+    }
+}
+.brand-wrapper {
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+.brand-title {
+    @include sub-title;
+    text-align: center;
+    opacity: 0.75;
+}
+.brand-img-box {
+    width: 280px;
+    height: 154px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.b-tesla {
+    width: 106.02px;
+    height: 14.26px;
+}
+.b-microsoft {
+    width: 119.17px;
+    height: 26px;
+}
+.b-hp {
+    width: 114.94px;
+    height: 22px;
+}
+.b-oracle {
+    width: 107.55px;
+    height: 13.85px;
+}
+.b-google {
+    width: 78.94px;
+    height: 27px;
+}
+.b-nvida {
+    width: 112.66px;
+    height: 21.27px;
+}
+@media only screen and (min-width: 640px){
+    .contact {
+        margin-top: 43px;
+    }
+    .contact__inner__title {
+        width: 546px;
+        font-size: 48px;
+        line-height: 56px;
+    }
+    .form-and-brand-wrapper {
+        margin-top: 54px;
+    }
+    .input {
+        width: 445px;
+        height: 42px;
+    }
+    .message {
+        height: 89px;
+    }
+    .checkboc-symbol {
+        width: 445px;
+    }
+    .brand-wrapper {
+        width: 541px;
+        margin-top: 64px;
+    }
+    .brand-title {
+        width: 445px;
+    }
+    .brand-img-box {
+        width: 541px;
+        height: 130px;
+    }
+    .b-tesla {
+        width: 130.2px;
+        height: 17px;
+    }
+    .b-microsoft {
+        width: 146.35px;
+        height: 31px;
+    }
+    .b-hp {
+        width: 141.31px;
+        height: 27px;
+    }
+    .b-oracle {
+        width: 132.22px;
+        height: 17px;
+    }
+    .b-google {
+        width: 96.9px;
+        height: 33px;
+    }
+    .b-nvida {
+        width: 138.28px;
+        height: 26px;
+    }
+    .inner_bottom-box {
+        margin-top: 68px;
+    }
+}
+@media only screen and (min-width: 820px){
+    .contact {
+        margin-top: 50px;
+    }
+    .contact__inner {
+        align-items: flex-start;
+    }
+    .contact__inner__title {
+        width: 730px;
+        font-size: 56px;
+    }
+    .form-and-brand-wrapper {
+        width: 1110px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 54px;
+    }
+    .brand-wrapper {
+        width: 541px;
+        align-items: flex-start;
+        margin-top: 0;
+    }
+    .brand-title {
+        text-align: start;
+    }
+    .inner_bottom-box {
+        margin-top: 61px;
+    }
+}

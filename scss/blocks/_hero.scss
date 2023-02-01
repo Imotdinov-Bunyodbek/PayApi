@@ -32,7 +32,7 @@
     padding-left: 24px;
     margin-bottom: 16px;
     &::placeholder {
-        font-family: 'Public Sans';
+        font-family: "Public Sans";
         font-style: normal;
         font-weight: 700;
         font-size: 15px;
@@ -45,13 +45,13 @@
 .form__button {
     width: 327px;
     height: 48px;
-    font-family: 'Public Sans';
+    font-family: "Public Sans";
     @include main-link;
     border: none;
     margin-bottom: 24px;
 }
 .hero__text {
-    font-family: 'Public Sans';
+    font-family: "Public Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -59,7 +59,7 @@
     color: #6c8294;
 }
 .text__link {
-    font-family: 'Public Sans';
+    font-family: "Public Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 15px;

@@ -1,3 +1,6 @@
+.not-index-body {
+    background-position: calc(50% + 330px) calc(50% - 650px);
+}
 .pricing__inner {
     display: flex;
     flex-direction: column;
@@ -20,7 +23,7 @@
     align-items: center;
 }
 .pricing-title {
-    font-family: 'DM Serif Display';
+    font-family: "DM Serif Display";
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -35,7 +38,7 @@
     display: none;
 }
 .plan-price {
-    font-family: 'DM Serif Display';
+    font-family: "DM Serif Display";
     font-style: normal;
     font-weight: 400;
     font-size: 56px;
@@ -82,7 +85,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Public Sans';
+    font-family: "Public Sans";
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
