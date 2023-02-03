@@ -17,6 +17,9 @@
     align-items: center;
     margin-top: 40px;
 }
+.contact-form-label {
+    position: relative;
+}
 .input {
     width: 327px;
     height: 42px;
@@ -38,12 +41,35 @@
     &::placeholder {
         opacity: 0.5;
     }
+    &:not(:placeholder-shown):not(:focus):invalid {
+        color: #ff0000;
+        border-bottom: 1px solid #ff0000;
+        opacity: 0.5;
+    }
+    &:not(:placeholder-shown):not(:focus):invalid+.contact-form__input-err {
+        opacity: 1;
+    }
+}
+.contact-form__input-err {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 123px;
+    opacity: 0;
+    font-family: 'Public Sans';
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -0.0846154px;
+    color: #ff0000;
+    transition: all .5s;
 }
 .input:focus {
     outline: none;
 }
 .message {
     height: 89px;
+    resize: none;
 }
 .checkboc-symbol {
     width: 327px;

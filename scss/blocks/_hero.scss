@@ -41,6 +41,9 @@
         mix-blend-mode: normal;
         opacity: 0.5;
     }
+    &:focus {
+        outline: none;
+    }
 }
 .form__button {
     width: 327px;

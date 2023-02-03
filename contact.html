@@ -38,15 +38,26 @@
                     <h2 class="contact__inner__title">Submit a help request and we’ll get in touch shortly.</h2>
                     <div class="form-and-brand-wrapper">
                         <form class="contact-form" action="">
-                            <input class="input" type="text" name="name" minlength="2" maxlength="20" autocomplete="off" placeholder="Name">
-                            <input class="input" type="email" name="email" autocomplete="off" placeholder="Email Address">
-                            <input class="input" type="text" name="company_name" minlength="5" maxlength="30" autocomplete="off" placeholder="Company Name">
-                            <input class="input" type="text" name="title" minlength="5" maxlength="20" autocomplete="off" placeholder="Title">
-                            <input class="input message" type="text" name="message" maxlength="100" autocomplete="off" placeholder="Message">
-                            <span class="checkboc-symbol">
+                            <label class="contact-form-label">
+                                <input class="input" type="text" name="name" minlength="2" maxlength="20" autocomplete="off" placeholder="Name">
+                            </label>
+                            <label class="contact-form-label">
+                                <input class="input" type="email" name="email" autocomplete="off" placeholder="Email Address">
+                                <span class="contact-form__input-err">This field can’t be empty</span>
+                            </label>
+                            <label class="contact-form-label">
+                                <input class="input" type="text" name="company_name" minlength="5" maxlength="30" autocomplete="off" placeholder="Company Name">
+                            </label>
+                            <label class="contact-form-label">
+                                <input class="input" type="text" name="title" minlength="5" maxlength="20" autocomplete="off" placeholder="Title">
+                            </label>
+                            <label class="contact-form-label">
+                                <textarea class="input message" name="message" placeholder="Message"></textarea>
+                            </label>
+                            <label class="checkboc-symbol">
                                 <input class="checkbox" type="checkbox">
                                 <p class="checkbox-text">Stay up-to-date with company announcements and updates to our API</p>
-                            </span>
+                            </label>
                             <button class="contact-button" type="submit">Submit</button>
                         </form>
                         <div class="brand-wrapper">
